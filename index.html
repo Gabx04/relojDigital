@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Reloj Digital</title>
+		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body onload="reloj()">
+		<section class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<p id="hora"></p>
+					<p id="fecha"></p>
+					<button id="seleccion" type="button" class="btn btn-lg" data-toggle="modal" data-target="#myModal">
+						<i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+					</button>
+					<div class="modal fade text-left" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						<div class="modal-dialog" role="document">
+					    	<div class="modal-content">
+					    		<div class="modal-body">
+					    			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					    			<ul class="listaPaises">
+					    				<li><input type="checkbox" id="checkChicago"><span class="capital">Chicago</span></li>
+					    				<li><input type="checkbox" id="checkSaoPaulo"><span class="capital">Sao Paulo</span></li>
+					    				<li><input type="checkbox" id="checkSantiago"><span class="capital">Santiago</span></li>
+					    				<li><input type="checkbox" id="checkMexico"><span class="capital">México D.F.</span></li>
+					    				<li><input type="checkbox" id="checkCaracas"><span class="capital">Caracas</span></li>
+					    				<li><input type="checkbox" id="checkBrasilia"><span class="capital">Brasilia</span></li>
+					    				<li><input type="checkbox" id="checkQuito"><span class="capital">Quito</span></li>
+					    				<li><input type="checkbox" id="checkGuayaquil"><span class="capital">Guayaquil</span></li>
+					    				<li><input type="checkbox" id="checkSantaMarta"><span class="capital">Santa Marta</span></li>
+					    				<li><input type="checkbox" id="checkBogota"><span class="capital">Bogotá</span></li>
+					    			</ul>
+					    		</div>
+					    	</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
