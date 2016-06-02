@@ -1,12 +1,12 @@
 body {
 	background-image: url(../img/wp.jpg);
 }
-#hora, #fecha {
+#horaActual, #fecha {
 	font-family: 'PT Sans', sans-serif;
 	color: #fff;
 	text-align: center;
 }
-#hora {
+#horaActual {
 	font-size: 36px;
 	font-weight: 700;
 	padding-top: 10%;

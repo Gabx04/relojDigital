@@ -11,11 +11,14 @@
 		<link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
-	<body onload="reloj()">
+	<body>
 		<section class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12 text-center">
-					<p id="hora"></p>
+					<p>
+						<span id="horaActual"></span>
+						<span id="amp"></span>
+					</p>
 					<p id="fecha"></p>
 					<button id="seleccion" type="button" class="btn btn-lg" data-toggle="modal" data-target="#myModal">
 						<i class="fa fa-globe fa-2x" aria-hidden="true"></i>
@@ -26,27 +29,29 @@
 					    		<div class="modal-body">
 					    			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 					    			<ul class="listaPaises">
-					    				<li><input type="checkbox" id="checkChicago"><span class="capital">Chicago</span></li>
-					    				<li><input type="checkbox" id="checkSaoPaulo"><span class="capital">Sao Paulo</span></li>
-					    				<li><input type="checkbox" id="checkSantiago"><span class="capital">Santiago</span></li>
-					    				<li><input type="checkbox" id="checkMexico"><span class="capital">México D.F.</span></li>
-					    				<li><input type="checkbox" id="checkCaracas"><span class="capital">Caracas</span></li>
-					    				<li><input type="checkbox" id="checkBrasilia"><span class="capital">Brasilia</span></li>
-					    				<li><input type="checkbox" id="checkQuito"><span class="capital">Quito</span></li>
-					    				<li><input type="checkbox" id="checkGuayaquil"><span class="capital">Guayaquil</span></li>
-					    				<li><input type="checkbox" id="checkSantaMarta"><span class="capital">Santa Marta</span></li>
-					    				<li><input type="checkbox" id="checkBogota"><span class="capital">Bogotá</span></li>
+					    				<li><input type="checkbox" data="0"><span class="capital">Chicago</span></li>
+					    				<li><input type="checkbox" data="1"><span class="capital">Sao Paulo</span></li>
+					    				<li><input type="checkbox" data="2"><span class="capital">Santiago</span></li>
+					    				<li><input type="checkbox" data="3"><span class="capital">México D.F.</span></li>
+					    				<li><input type="checkbox" data="4"><span class="capital">Caracas</span></li>
+					    				<li><input type="checkbox" data="5"><span class="capital">Brasilia</span></li>
+					    				<li><input type="checkbox" data="6"><span class="capital">Quito</span></li>
+					    				<li><input type="checkbox" data="7"><span class="capital">Guayaquil</span></li>
+					    				<li><input type="checkbox" data="8"><span class="capital">Santa Marta</span></li>
+					    				<li><input type="checkbox" data="9"><span class="capital">Bogotá</span></li>
 					    			</ul>
 					    		</div>
 					    	</div>
 						</div>
 					</div>
+					
 				</div>
 			</div>
+			<div id="horaCapitales" class="row" >
+				
+			</div>
 		</section>
-
-
-		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery-1.12.4.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
